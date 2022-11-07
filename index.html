@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AES Cipher</title>
+</head>
+<body>
+
+    <div class="main">
+
+   
+        <h1>Login Page</h1>
+   
+    <label for="fname">Your Name:</label><br>
+    <input id="text" type="text" placeholder="Enter Full Names" /> <br>
+
+    <label for="password">Password:</label><br>
+    <input id="password" type="text" value="Your Password" /> <br><br>
+
+
+    <button onclick="encrypt()">encrypt</button>
+
+    <br />Encrypted Value:<br /><span id="EncryptedValue"></span>
+
+    <br />
+    <button onclick="decrypt()">decrypt</button>
+    <br />Decrypted Value: <span id="decrypted"></span>
+
+</div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="/index.js"></script>
+
+</html>
